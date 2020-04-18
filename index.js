@@ -114,4 +114,4 @@ client.on("message", async message => {
         command.run(client, message, args);
 });
 
-client.login(process.env.TOKEN);
+client.login("NjkyOTQxMTc1NjAyMjgyNTQ3.XppT6w.e0aYvVGaKn1gTklypQwsUlE-T64");
