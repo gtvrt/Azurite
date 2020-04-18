@@ -22,7 +22,8 @@ module.exports = {
                 .setTitle("**Failed To Verify**")
                 .setAuthor('Azurite BOT | Announcement', 'https://i.imgur.com/QklWiqQ.png')
                 .setDescription(args.slice(1).join(" "))
-                .setColor(args.slice(2).join(" "));
+                .setColor(args.slice(2).join(" "))
+                .setThumbnail('https://i.imgur.com/QklWiqQ.png')
                 .setTimestamp()
                 .setFooter('Azurite BOT | Announcement', 'https://i.imgur.com/QklWiqQ.png');
 
