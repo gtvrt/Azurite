@@ -19,7 +19,7 @@ module.exports = {
 
         if (args[0].toLowerCase() === "embed") {
             const embed = new RichEmbed()
-                .setTitle("**Failed To Verify**")
+                .setTitle("**Announcement**")
                 .setAuthor('Azurite BOT | Announcement', 'https://i.imgur.com/QklWiqQ.png')
                 .setDescription(args.slice(1).join(" "))
                 .setColor(args.slice(2).join(" "))
