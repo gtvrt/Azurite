@@ -35,7 +35,7 @@ client.on("ready", () => {
     function rpc() {
         client.user.setStatus('dnd')
 
-        client.user.setActivity('!help', {type: 'LISTENING'});
+        client.user.setActivity('h!help', {type: 'LISTENING'});
         setTimeout(function () {
 
             client.user.setActivity('Halo Grinders', {type: 'WATCHING'});
