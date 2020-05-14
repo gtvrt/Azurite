@@ -24,11 +24,8 @@ module.exports = {
 function getAll(client, message) {
     const embed = new RichEmbed()
         .setColor("BLUE")
-        .setDescription("These are the avaliable commands for Azurite BOT \nThe bot prefix is: ;")
-        .setAuthor('Azurite BOT | Help', 'https://i.imgur.com/QklWiqQ.png', 'https://discord.gg/')
-        .setThumbnail('https://i.imgur.com/QklWiqQ.png')
+        .setDescription("These are the avaliable commands for Halo Grinders \nThe bot prefix is: !")
         .setTimestamp()
-        .setFooter('Azurite Bot | 6 command of total', 'https://i.imgur.com/QklWiqQ.png');
         
     // Map all the commands
     // with the specific category
