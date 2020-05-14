@@ -1,9 +1,9 @@
   
 const { discord, RichEmbed } = require("discord.js");
 module.exports = {
-    name: "redhalo",
+    name: "bluehalo",
     category: "halos",
-    description: "How to get a red halo?",
+    description: "How to get a blue halo?",
     run: async (client, message, args) => {
 
         var bluehalo = new RichEmbed()
