@@ -35,10 +35,10 @@ client.on("ready", () => {
     function rpc() {
         client.user.setStatus('dnd')
 
-        client.user.setActivity(';help', {type: 'LISTENING'});
+        client.user.setActivity('!help', {type: 'LISTENING'});
         setTimeout(function () {
 
-            client.user.setActivity('Azurite', {type: 'WATCHING'});
+            client.user.setActivity('Halo Grinders', {type: 'WATCHING'});
             setTimeout(function () {
                 
                 client.user.setActivity(`${client.guilds.size} Servers`, {type: 'WATCHING'});
@@ -48,16 +48,16 @@ client.on("ready", () => {
 
                     setTimeout(function(y) {
                         rpc();
-                    }, 5000);
-                }, 5000);
-            }, 5000);
-        }, 5000);
+                    }, 10000);
+                }, 10000);
+            }, 10000);
+        }, 10000);
     }
     console.log(`[Discord] Connected to discord as ${client.user.tag}`);
 });
 
 client.on("message", async message => {
-    const prefix = ";";
+    const prefix = "!";
 
     if (message.author.bot) return;
     if (!message.guild) return;
