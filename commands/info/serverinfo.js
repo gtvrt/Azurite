@@ -7,7 +7,7 @@ module.exports = {
 
         var serverEmbed = new RichEmbed()
             .setDescription("Server Info")
-            .setColor("#003bff")
+            .setColor("#000000")
             .addField("Bot name:", client.user.username)
             .addField("Total Members:", message.guild.memberCount)
             .setAuthor("Halo Grinders | Info", "https://cdn.discordapp.com/icons/709007697626005566/6d2b1f1882f674e06a41280dbb0e970c.png?size=256")
