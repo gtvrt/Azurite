@@ -23,7 +23,7 @@ module.exports = {
 
 function getAll(client, message) {
     const embed = new RichEmbed()
-        .setColor("BLUE")
+        .setColor("#000000")
         .setDescription("These are the avaliable commands for Halo Grinders \nThe bot prefix is: h!")
         .setTimestamp()
         
