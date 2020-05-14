@@ -56,44 +56,6 @@ client.on("ready", () => {
     console.log(`[Discord] Connected to discord as ${client.user.tag}`);
 });
 
-client.on('guildMemberAdd', member => {
-    console.log('User' + member.user.username + " has joined to the server!")
-    console.log(member)
-    const joinlogs = new RichEmbed()
-    .setAuthor('Azurite BOT | Logs', 'https://i.imgur.com/QklWiqQ.png')
-    .setDescription('Hi, ' + member.user.username + '. Welcome to Azurite | Community. Please read the rules before accessing eah channel.')
-    .setThumbnail(member.user.displayAvatarURL)
-    .setTimestamp()
-    .setFooter('Azurite BOT | Join Logs!', member.user.displayAvatarURL);
-    member.guild.channels.get('700291005714399232').send({embed: joinlogs})
-    const join = new RichEmbed()
-    .setAuthor('Azurite BOT | Logs', 'https://i.imgur.com/QklWiqQ.png')
-    .setDescription(member.user.username + ' has joined ')
-    .setThumbnail(member.user.displayAvatarURL)
-    .setTimestamp()
-    .setFooter('Azurite BOT | Join Logs!', member.user.displayAvatarURL);
-    member.guild.channels.get('700315300717002812').send({embed: join})
-});
-
-client.on('guildMemberRemove', member => {
-    console.log('User' + member.user.username + " has left to the server!")
-    console.log(member)
-    const leavelogs = new RichEmbed()
-    .setAuthor('Azurite BOT | Logs', 'https://i.imgur.com/QklWiqQ.png')
-    .setDescription('Bye, ' + member.user.username + ' thanks for coming, and dont come back!')
-    .setThumbnail(member.user.displayAvatarURL)
-    .setTimestamp()
-    .setFooter('Azurite BOT | Join Logs!', member.user.displayAvatarURL);
-    member.guild.channels.get('700291005714399232').send({embed: leavelogs})
-    const leave = new RichEmbed()
-    .setAuthor('Azurite BOT | Logs', 'https://i.imgur.com/QklWiqQ.png')
-    .setDescription(member.user.username + ' has left the server!')
-    .setThumbnail(member.user.displayAvatarURL)
-    .setTimestamp()
-    .setFooter('Azurite BOT | Join Logs!', member.user.displayAvatarURL);
-    member.guild.channels.get('700315300717002812').send({embed: leave})
-});
-
 client.on("message", async message => {
     const prefix = ";";
 
