@@ -6,7 +6,7 @@ module.exports = {
     run: async (client, message, args) => {
 
         var serverEmbed = new RichEmbed()
-            .setDescription("Server Info")
+            .setDescription("**Server Info**")
             .setColor("#000000")
             .addField("Bot name:", client.user.username, true)
             .addField("Total Members:", message.guild.memberCount, true)
