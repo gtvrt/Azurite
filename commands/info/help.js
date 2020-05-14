@@ -24,7 +24,7 @@ module.exports = {
 function getAll(client, message) {
     const embed = new RichEmbed()
         .setColor("BLUE")
-        .setDescription("These are the avaliable commands for Halo Grinders \nThe bot prefix is: !")
+        .setDescription("These are the avaliable commands for Halo Grinders \nThe bot prefix is: h!")
         .setTimestamp()
         
     // Map all the commands
